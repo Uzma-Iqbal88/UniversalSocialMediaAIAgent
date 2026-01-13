@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Social Media AI Agent",
+  "version": "1.0",
+  "description": "Navigate and interact with social media using natural language commands.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.twitter.com/*",
+        "*://*.x.com/*",
+        "*://*.facebook.com/*",
+        "*://*.instagram.com/*",
+        "*://*.linkedin.com/*"
+      ],
+      "js": [
+        "scripts/utils/agent.js",
+        "scripts/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

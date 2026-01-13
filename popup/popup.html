@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Social Agent</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Agent</h1>
+            <p>Universal Social Media Controller</p>
+        </header>
+        
+        <main>
+            <div class="input-group">
+                <textarea id="commandInput" placeholder="Enter command (e.g., 'Like first 5 posts', 'Search for AI')..."></textarea>
+            </div>
+            <button id="executeBtn">Executing Agent...</button>
+        </main>
+
+        <div class="status-panel">
+            <h3>🔴 Agent Logs</h3>
+            <div id="logs" class="logs-container">
+                <div class="log-entry system">Waiting for command...</div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
