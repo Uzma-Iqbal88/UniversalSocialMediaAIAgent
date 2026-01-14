@@ -23,7 +23,10 @@ A Chrome Extension that allows you to control social media platforms (Twitter/X,
 2.  Click the **AI Agent** extension icon.
 3.  Type a command in the popup:
     - *"Search for machine learning"*
-    - *"Like 3 posts"*
+    - *"Like first 5 posts"*
+    - *"Like posts from past 24 hours"*
+    - *"Go to Elon Musk's profile"*
+    - *"Comment 'Great post!' on this post"* (Experimental)
     - *"Scroll 10 seconds"*
 4.  Click **Execute**.
 5.  Watch the logs in the popup and the actions on the page.
